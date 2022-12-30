@@ -7,12 +7,49 @@
     <title>List</title>
     <style>
         ul{
-            /* padding-left: 20px; */
+            padding-left: 200px;
+            /* list-style-type: none; */
         }
         .item{
             /* list-style-type: lower-roman; */
-            list-style-position: outside;
-            list-style-type:"💖";
+            /* list-style-position: outside;
+            list-style-type:"\1F6BD"; */
+            list-style-image: url("./img/download.png");
+        }
+        li::before{
+            /* content:"\2764";
+            color: tomato;
+            padding-right: 10px; */
+        }
+        ul li::after{
+            content:"\2764";
+            color: tomato;
+            padding-left: 20px;
+        }
+        ol{
+            list-style-type: none;
+            margin: 5px;
+            padding: 5px;
+        }
+        ol li{
+            border: 1px solid darkorange;
+            border-radius: 25px;
+            margin: 10px;
+            padding-left: 1rem;
+            background-color: lightgreen;
+            border-left: 15px solid gray;
+            color: darkblue;
+            width: 15rem;
+            /* display: inline; */
+            display: inline-block;
+        }
+        ol li:hover{
+            background-color: gray;
+            border-left: 15px solid lightgreen;
+            cursor: cell;
+        }
+        ol li::before{
+            content: "❌";
         }
     </style>
 </head>
@@ -23,5 +60,13 @@
         <li class="item item3">item3</li>
         <li class="item item4">item4</li>
     </ul>
+  
+    <ol>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ol>
 </body>
 </html>
