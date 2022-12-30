@@ -1,0 +1,62 @@
+.main {
+  width: 100%;
+  background-color: aqua;
+  height: 1000px;
+  /* margin: 30px; */
+  padding: 5px;
+  position: relative;
+  margin-top: 50px;
+}
+.box1 {
+  width: 90%;
+  margin: auto;
+  height: 100px;
+  background-color: rgba(8, 38, 231, 0.801);
+  position: fixed;
+  top: 50%;
+  border-radius: 20px;
+  color: yellow;
+}
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(232, 232, 13, 0.753);
+  /* position: relative; with position we use lef and top position just after it */
+  /* top: 20px;
+  left: 30px; */
+  position: relative;
+
+}
+.box3 {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(229, 7, 214, 0.721);
+  /* position: absolute; */
+  /* top: 20px;
+  left: 80px;
+  */
+position: sticky;
+left: 0;
+top: 65px;
+  
+}
+#inside{
+    width: 30px;
+    height:30px;
+    background-color: yellow;
+    font-size: .5rem;
+    color: blue;
+    position: absolute;
+    bottom:0;
+    right: 0;
+}
+#inside2{
+  width: 30px;
+  height:30px;
+  background-color: red;
+  font-size: .5rem;
+  color: yellow;
+  position: absolute;
+  bottom:0;
+  left: 0;
+}
